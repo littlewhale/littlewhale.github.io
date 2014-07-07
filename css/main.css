@@ -1,0 +1,279 @@
+body {
+	background: #e0e0e0;
+}
+
+#main-nav  {
+	text-align: center;
+}
+
+#main-nav ul {
+	margin: 0;
+	padding: 1em 0 .5em; 
+}
+
+#main-nav li  {
+	display: block;
+	opacity: 1;
+	margin: 0 .5em .5em;
+}
+
+#main-nav a {
+	border-radius: 10px;
+	display: block;	
+	font-size: 1.05em;
+	padding: 10px 26.333px;
+	text-decoration: none;
+	transition: background-color 0.25s linear .1s, border-color .25s linear .1s, color .25s linear .1s;
+}
+
+#main-nav a:hover  {
+	transition: background-color 0.25s linear .1s, border-color .25s linear .1s, color .25s linear .1s;
+}
+
+#sunflower  {
+	background: url("../img/sunflower3.jpg") no-repeat center;
+	background-size: cover;
+	height: 18.75em; 
+	width: 100%;
+}
+
+#intro {
+	overflow: auto;
+}
+
+#intro header {
+	font-size: 2em;
+	margin: 0;  
+	padding: 2em 1em 1em;
+}
+
+#intro h1  {
+	font-family: 'Great Vibes', cursive;
+	font-size: 2.5em;
+	letter-spacing: .01em;
+	font-weight: lighter;
+	line-height: .9;
+	margin: 0 0 .5em 0;
+	text-align: center;
+}
+
+#intro h2  {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: .6em;
+	font-weight: lighter;
+	margin: -1.5em auto;
+	text-align: center;
+}
+
+#intro p  {
+	font-family: 'Open San', sans-serif;
+	font-size: .8em;
+	font-weight: lighter;
+	letter-spacing: -1px;
+	line-height: 1.3;
+	margin: 75px 0 0 0;
+	text-transform: uppercase;
+}
+
+#intro em  {
+	font-style: normal;
+	padding: 0 5px;
+}
+
+#about  {
+	margin: 0;  
+	padding: 1em;
+	overflow:auto;
+}
+
+#about p {
+	font-style: italic;
+	font-family: OpenSans-CondensedLight;
+	line-height: 1.6em;
+
+}
+
+#about p::before, #about p::after {
+	content: '”';
+	font-size: 2em;
+}
+
+#about p::before {
+	content: '“';
+}
+
+#about ul  {
+	margin: 0;
+	padding: 0;
+}
+
+#about li  {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 .5em;
+	padding-top: 2em;
+	width: 50%;
+	float: right;
+}
+
+
+
+#about li a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	list-style: none;
+	list-style: none;
+	margin-left: 0px;
+	text-decoration: none;
+}
+
+#footer  {
+	text-align: center;
+	margin-left: 5px;
+	padding: 1em;
+	padding-bottom: 0.5px;
+}
+
+#footer p  {
+	font-size: 14px;
+}
+
+#footer a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.social-icon  {
+	height: 25px;
+	width: 25px;
+	margin-bottom: -7.75px
+}
+
+/* colours */
+
+#home #main-nav { background: #eee; }
+#home #main-nav a { background: #f2f2f2; color: #444; }
+#home #main-nav a:hover { background-color: #444 !important; color: #f2f2f2; }
+#home #main-nav li:nth-child(2) a { background: #bababa; }
+#home #main-nav li:nth-child(3) a { background: #d0d0d0; }
+#home #main-nav a.selected { background-color: #7e7e7e; border-color: #bababa; color: #fff; }
+#home #intro { background: #7e7e7e; }
+#home #intro p { color: #444; }
+#home #intro h1 { color: #fff; }
+#home #intro h2 { color: #bababa; }
+#home #intro em { background: #eee; border: 1px solid #bababa; }
+#home #about { background: #c3c3c3; }
+#home #about p { color: #444;}
+#home #about li { color: #444; }
+#home #footer { background: #eee; }
+#home #footer p { color: #444; }
+
+#portfolio #main-nav { background: #d8d4db; }
+#portfolio #main-nav a { background: #efedf0; color: #130023; }
+#portfolio #main-nav a:hover { background-color: #130023 !important; color: #efedf0; }
+#portfolio #main-nav li:nth-child(2) a { background: #5c4e67; }
+#portfolio #main-nav li:nth-child(3) a { background: #c4bfc8; }
+#portfolio #main-nav a.selected { background-color: #5c4e67; border-color: #5c4e67; color: #fff !important; }
+#portfolio #intro { background: #5c4e67; }
+#portfolio #intro p { color: #130023; }
+#portfolio #intro h1 { color: #fff; }
+#portfolio #intro h2 { color: #a8a0ae; }
+#portfolio #intro em { background: #d8d4db; border: 1px solid #a8a0ae; }
+#portfolio #about { background: #b3adb8; }
+#portfolio #about li { color: #222; }
+#portfolio #about p { color: #130023; }
+#portfolio #footer { background: #d8d4db; }
+#portfolio #footer p { color: #130023; }
+
+#contact #main-nav { background: #eee; }
+#contact #main-nav a { background: #ecf0f0; color: #002c27; }
+#contact #main-nav a:hover { background-color: #002c27 !important; color: #ecf0f0; }
+#contact #main-nav li:nth-child(2) a { background: #9cb1af; }
+#contact #main-nav li:nth-child(3) a { background: #466d6a; }
+#contact #main-nav a.selected { background-color: #466d6a; border-color: #9cb1af; color: #fff; }
+#contact #intro { background: #466d6a; }
+#contact #intro p { color: #002c27; }
+#contact #intro h1 { color: #fff; }
+#contact #intro h2 { color: #9cb1af; }
+#contact #intro em { background: #eee; border: 1px solid #9cb1af; }
+#contact #about { background: #a9bbba; }
+#contact #about li { color: #002c27; }
+#contact #footer { background: #eee; }
+#contact #footer p { color: #002c27; }
+
+/* desktop */
+
+@media (min-width: 40.063em ) {
+
+	#main-nav ul {
+		text-align:left;
+		padding:0;
+		margin:0;
+	}
+
+	#main-nav li  {
+		display: inline-block;
+		opacity: 1;  
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+
+	#main-nav a {
+		margin: 0;
+		font-size: 1.5em;
+		text-decoration: none;
+		border-radius: 0;
+		border:none;
+	}
+
+	#sunflower {
+		float: right;
+		width: 50%;
+		height: 28em;
+	}
+
+	#intro header {
+		float:left;
+		width: 40%;
+	}
+
+	#about {
+		padding: 2em;
+	}
+
+	#about ul {
+		float:right;
+		width:48%;
+	}
+
+	#about p {
+		float:left;
+		width:45%;
+	}
+
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xGAzD5WKQVN4wSyA0MYYi4rr7w4p9aSvGirXi6XmeXNA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url(http://themes.googleusercontent.com/static/fonts/greatvibes/v2/6q1c0ofG6NKsEhAc2eh-3brIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
