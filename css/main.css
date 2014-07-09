@@ -160,30 +160,39 @@ body {
 }
 
 #footer  {
-	text-align: center;
-	margin-left: 5px;
 	padding: 1em;
-	padding-bottom: 0.5px;
+	padding-bottom: .5em;
+	overflow: auto;
+	text-align: center;
 }
 
-#footer p  {
+.copyright  {
 	font-size: 14px;
 }
 
-#footer a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0;
-  margin: 0 0 10px;
+.social {
+	overflow: auto;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 0;
 }
 
-.social-icon  {
-	height: 25px;
-	width: 25px;
-	margin-bottom: -7.75px
+.social li {
+	display: inline;
 }
+
+.social a  {
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	background-repeat: no-repeat;
+	text-indent: -999em;
+}
+
+.social .tumblr   a { background-image: url('../img/tumblr-48.png'); }
+.social .github   a { background-image: url('../img/github-48.png'); }
+.social .facebook a { background-image: url('../img/facebook-48.png'); }
+.social .treehouse a { background-image: url('../img/treehouse-48.png'); }
 
 /* colours */
 
@@ -305,7 +314,7 @@ body {
 		width: 50%;
 	}
 
-	#contact ul {
+	#contact #content ul {
 		width: 100%;
 	}
 
@@ -324,6 +333,21 @@ body {
 
 	#content p {
 		float: left;
+		width: 45%;
+	}
+
+	.social { 
+		float: right;
+		width: 45%;
+	}
+
+	.social li {
+		float: right;
+	}
+	
+	.copyright {
+		float: left;
+		text-align: left;
 		width: 45%;
 	}
 
