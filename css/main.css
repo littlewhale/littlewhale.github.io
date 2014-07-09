@@ -19,7 +19,8 @@ body {
 
 #main-nav a {
 	border-radius: 10px;
-	display: block;	
+	display: block;
+	font-family: 'OpenSans'	
 	font-size: 1.05em;
 	padding: 10px 26.333px;
 	text-decoration: none;
@@ -30,12 +31,24 @@ body {
 	transition: background-color 0.25s linear .1s, border-color .25s linear .1s, color .25s linear .1s;
 }
 
-#sunflower  {
-	background: url("../img/sunflower3.jpg") no-repeat center;
+#intro .photo {
 	background-size: cover;
-	height: 18.75em; 
+	height: 13.75em; 
 	width: 100%;
 }
+
+#sunflower  {
+	background: url("../img/sunflower3.jpg") no-repeat center;
+}
+
+#aerial  {
+	background: url("../img/aerial.jpg") no-repeat center;
+}
+
+#books  {
+	background: url("../img/oldbooks.jpg") no-repeat center;
+}
+
 
 #intro {
 	overflow: auto;
@@ -44,7 +57,7 @@ body {
 #intro header {
 	font-size: 2em;
 	margin: 0;  
-	padding: 2em 1em 1em;
+	padding: 2em 1em 2em;
 }
 
 #intro h1  {
@@ -67,59 +80,77 @@ body {
 
 #intro p  {
 	font-family: 'Open San', sans-serif;
-	font-size: .8em;
+	font-size: .7em;
 	font-weight: lighter;
 	letter-spacing: -1px;
 	line-height: 1.3;
 	margin: 75px 0 0 0;
 	text-transform: uppercase;
+	text-align: center;
+}
+
+#contact #intro p  {
+	font-size: 0.9em;
 }
 
 #intro em  {
 	font-style: normal;
-	padding: 0 5px;
+	padding: 2px 5px;
 }
 
-#about  {
+#content  {
 	margin: 0;  
 	padding: 1em;
 	overflow:auto;
 }
 
-#about p {
+#content p {
 	font-style: italic;
-	font-family: OpenSans-CondensedLight;
+	font-family: 'OpenSans-CondensedLight';
 	line-height: 1.6em;
-
+	padding: 2em 0 2em;
 }
 
-#about p::before, #about p::after {
+#content p::before, #content p::after {
 	content: '”';
 	font-size: 2em;
 }
 
-#about p::before {
+#content p::before {
 	content: '“';
 }
 
-#about ul  {
+#content ul  {
 	margin: 0;
-	padding: 0;
+	padding: 2em 0 0 0;
 }
 
-#about li  {
+#content li  {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
-	margin: 0 0 .5em;
+	list-style: none;
+	margin: 0 0 .3em;
 	padding-top: 2em;
-	width: 50%;
-	float: right;
+	text-align: center;	
+	width: 50%; 
+	float: left;
 }
 
+#home #content li  {
+	padding-bottom: 2em;
+}
 
+#about #content li {
+	padding-bottom: 2em;
+}
 
-#about li a {
+#contact #content li  {
+	padding: 4em 0em 4em 1em;
+	width: 93%;	
+}
+
+#content li a {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	list-style: none;
@@ -166,32 +197,32 @@ body {
 #home #intro p { color: #444; }
 #home #intro h1 { color: #fff; }
 #home #intro h2 { color: #bababa; }
-#home #intro em { background: #eee; border: 1px solid #bababa; }
-#home #about { background: #c3c3c3; }
-#home #about p { color: #444;}
-#home #about li { color: #444; }
+#home #intro em { background: #eee; }
+#home #content { background: #c3c3c3; }
+#home #content p { color: #666;}
+#home #content li { color: #444; }
 #home #footer { background: #eee; }
 #home #footer p { color: #444; }
 
-#portfolio #main-nav { background: #d8d4db; }
-#portfolio #main-nav a { background: #efedf0; color: #130023; }
-#portfolio #main-nav a:hover { background-color: #130023 !important; color: #efedf0; }
-#portfolio #main-nav li:nth-child(2) a { background: #5c4e67; }
-#portfolio #main-nav li:nth-child(3) a { background: #c4bfc8; }
-#portfolio #main-nav a.selected { background-color: #5c4e67; border-color: #5c4e67; color: #fff !important; }
-#portfolio #intro { background: #5c4e67; }
-#portfolio #intro p { color: #130023; }
-#portfolio #intro h1 { color: #fff; }
-#portfolio #intro h2 { color: #a8a0ae; }
-#portfolio #intro em { background: #d8d4db; border: 1px solid #a8a0ae; }
-#portfolio #about { background: #b3adb8; }
-#portfolio #about li { color: #222; }
-#portfolio #about p { color: #130023; }
-#portfolio #footer { background: #d8d4db; }
-#portfolio #footer p { color: #130023; }
+#about #main-nav { background: #d8d4db; }
+#about #main-nav a { background: #efedf0; color: #130023; }
+#about #main-nav a:hover { background-color: #130023 !important; color: #efedf0; }
+#about #main-nav li:nth-child(2) a { background: #5c4e67; }
+#about #main-nav li:nth-child(3) a { background: #c4bfc8; }
+#about #main-nav a.selected { background-color: #5c4e67; border-color: #5c4e67; color: #fff !important; }
+#about #intro { background: #5c4e67; }
+#about #intro p { color: #130023; }
+#about #intro h1 { color: #fff; }
+#about #intro h2 { color: #a8a0ae; }
+#about #intro em { background: #d8d4db; }
+#about #content { background: #b3adb8; }
+#about #content li { color: #130023; }
+#about #content p { color: #3e2d4b; }
+#about #footer { background: #d8d4db; }
+#about #footer p { color: #130023; }
 
 #contact #main-nav { background: #eee; }
-#contact #main-nav a { background: #ecf0f0; color: #002c27; }
+#contact #main-nav a { background: #bababa; color: #fff; }
 #contact #main-nav a:hover { background-color: #002c27 !important; color: #ecf0f0; }
 #contact #main-nav li:nth-child(2) a { background: #9cb1af; }
 #contact #main-nav li:nth-child(3) a { background: #466d6a; }
@@ -200,9 +231,10 @@ body {
 #contact #intro p { color: #002c27; }
 #contact #intro h1 { color: #fff; }
 #contact #intro h2 { color: #9cb1af; }
-#contact #intro em { background: #eee; border: 1px solid #9cb1af; }
-#contact #about { background: #a9bbba; }
-#contact #about li { color: #002c27; }
+#contact #intro em { background: #eee; }
+#contact #content { background: #a9bbba; }
+#contact #content li { color: #002c27; }
+#contact #content p { color: #24524e}
 #contact #footer { background: #eee; }
 #contact #footer p { color: #002c27; }
 
@@ -217,8 +249,7 @@ body {
 	}
 
 	#main-nav li  {
-		display: inline-block;
-		opacity: 1;  
+		display: inline-block; 
 		padding: 0;
 		margin: 0;
 		border: 0;
@@ -232,10 +263,27 @@ body {
 		border:none;
 	}
 
-	#sunflower {
+	#contact #main-nav a  {
+		background: #f2f2f2;
+		color: #333;
+	}
+
+	#intro #sunflower {
 		float: right;
 		width: 50%;
-		height: 28em;
+		height: 25em;
+	}
+
+	#intro #aerial {
+		float: right;
+		width: 50%;
+		height: 25em;
+	}
+
+	#intro #books {
+		float: right;
+		width: 50%;
+		height: 25em;
 	}
 
 	#intro header {
@@ -243,21 +291,44 @@ body {
 		width: 40%;
 	}
 
-	#about {
+	#intro p  {
+		margin: 3em 0 0 0;
+		text-align: center;
+	}
+
+	#content {
 		padding: 2em;
 	}
 
-	#about ul {
-		float:right;
-		width:48%;
+	#content ul {
+		float: right;
+		width: 50%;
 	}
 
-	#about p {
-		float:left;
-		width:45%;
+	#contact ul {
+		width: 100%;
+	}
+
+	#contact #content li  {
+		padding: 4em 0em 4em 1em;
+		width: 100%;	
+		text-align: center;	
+		float: none;
+	}
+	
+	#about #content li  {
+		float: right;
+		text-align: center;
+		width: 50%;
+	}
+
+	#content p {
+		float: left;
+		width: 45%;
 	}
 
 }
+
 
 @font-face {
   font-family: 'Open Sans';
