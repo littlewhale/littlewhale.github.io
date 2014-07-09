@@ -240,7 +240,7 @@ body {
 
 /* desktop */
 
-@media (min-width: 40.063em ) {
+@media screen and (min-width: 40em ) {
 
 	#main-nav ul {
 		text-align:left;
@@ -271,7 +271,7 @@ body {
 	#intro #sunflower {
 		float: right;
 		width: 50%;
-		height: 25em;
+		height: 28em;
 	}
 
 	#intro #aerial {
@@ -283,7 +283,7 @@ body {
 	#intro #books {
 		float: right;
 		width: 50%;
-		height: 25em;
+		height: 28em;
 	}
 
 	#intro header {
